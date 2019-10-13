@@ -1,0 +1,35 @@
+<users>
+    <user>
+        <countryName>Russia</countryName>
+        <countryCode>7</countryCode>
+        <phone>9555555555</phone>
+        <password>123</password>
+        <smsConfirmCode>000000</smsConfirmCode>
+        <pinCode>0000</pinCode>
+        <newPinCode>2222</newPinCode>
+        <incorrectPinCode>1111</incorrectPinCode>
+        <userName>Test Five</userName>
+        <accountNumber>MT71PAPY36836000002676370002677</accountNumber>
+        <accountCurrency>EUR</accountCurrency>
+        <card>
+            <cardNumber>5277601000011288</cardNumber>
+            <expirationDate>08/20</expirationDate>
+        </card>
+    </user>
+    <user>
+        <countryName>Russia</countryName>
+        <countryCode>7</countryCode>
+        <phone>9666666666</phone>
+        <password>123</password>
+        <smsConfirmCode>000000</smsConfirmCode>
+        <pinCode>0000</pinCode>
+        <incorrectPinCode>1111</incorrectPinCode>
+        <userName>Test Six</userName>
+        <accountNumber>MT44PAPY36836000002676370002678</accountNumber>
+        <accountCurrency>EUR</accountCurrency>
+        <card>
+            <cardNumber>5277601000011296</cardNumber>
+            <expirationDate>08/20</expirationDate>
+        </card>
+    </user>
+</users>
