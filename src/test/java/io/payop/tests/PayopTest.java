@@ -8,7 +8,6 @@ import java.util.Random;
 
 public class PayopTest extends BaseTest {
 
-
     @Test
     public void standardWithoutConversion() {
         String tabName = "Cards International";
