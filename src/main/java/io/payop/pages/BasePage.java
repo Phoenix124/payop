@@ -40,6 +40,7 @@ public class BasePage {
     }
 
     public void clickElementUsingJs(WebElement element){
+        waitForElementVisible(element);
         javascriptExecutor.executeScript("arguments[0].click();", element);
     }
 

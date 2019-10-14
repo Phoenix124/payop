@@ -30,6 +30,9 @@ public class RestPage extends BasePage {
     @FindBy(xpath = "//span[contains(text(),'Show payment page ')]/..")
     private WebElement showPaymentPageButton;
 
+    @FindBy(xpath = "//a[@href='/en/profile/payment-methods']")
+    private WebElement paymentMethodsButton;
+
     public RestPage(WebDriver webDriver) {
         super(webDriver);
         waitForPageVisible(selectDropdownList);
@@ -70,4 +73,11 @@ public class RestPage extends BasePage {
         clickElement(showPaymentPageButton);
         return new CheckoutPage(webDriver);
     }
+
+    public PaymentMethodsPage navigateToPaymentMethodsPage(){
+        clickElementUsingJs(paymentMethodsButton);
+        return new PaymentMethodsPage(webDriver);
+    }
+
+
 }

@@ -21,7 +21,7 @@ public class FeePage extends BasePage {
     @FindBy(xpath = "(//button[contains(@class,'fee-submit')])[3]")
     private WebElement saveFeeButton;
 
-    @FindBy(xpath = "//a[@href='/en/profile/projects/list']")
+    @FindBy(xpath = "//a[@href='/en/profile/payment-methods']")
     private WebElement projectsListButton;
 
     @FindBy(xpath = "//alert-comp")
@@ -29,6 +29,10 @@ public class FeePage extends BasePage {
 
     @FindBy(xpath = "//button[@class='close-alert']")
     private WebElement closeAlertButton;
+
+    @FindBy(xpath = "(//div[contains(@class,'pm-commission')])[2]")
+    private WebElement comissionLabel;
+
 
     public FeePage(WebDriver webDriver) {
         super(webDriver);
@@ -51,9 +55,13 @@ public class FeePage extends BasePage {
         return this;
     }
 
-    public ProjectsListPage navigateToProjectsListPage(){
+    public String getCardCommission(){
+        return comissionLabel.getText();
+    }
+
+    public PaymentMethodsPage navigateToProjectsListPage(){
         clickElementUsingJs(projectsListButton);
-        return new ProjectsListPage(webDriver);
+        return new PaymentMethodsPage(webDriver);
     }
 
     private WebElement getFeeTab(String tabName){
